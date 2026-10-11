@@ -95,11 +95,10 @@ class Project extends StatelessWidget {
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 1,
                 mainAxisSpacing: 0.5,
-                crossAxisSpacing: 0,
+                // crossAxisSpacing: 0,
                 mainAxisExtent: 55,
                 childAspectRatio: 1,
               ),
-              //  itemCount: weathers.length + 1,
               itemCount: weathers.length + 1,
               itemBuilder: (context, index) {
                 // index = weathers.length - index;
@@ -129,7 +128,6 @@ class Project extends StatelessWidget {
                       trailing: Text(dates[index - 1]),
                       onTap: () {},
                       onLongPress: () {},
-
                       // tileColor: const Color.fromARGB(135, 1, 0, 0),
                     ),
                   );
